@@ -3,9 +3,12 @@ export default {
   content: [
     './index.html',
     './src/**/*.{js,ts,vue}',
+    './node_modules/flowbite/**/*.js',
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    import('flowbite/plugin'),
+  ],
 };
