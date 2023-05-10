@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
 import LandingPage from './components/LandingPage.vue';
 import EventPage from './components/EventPage.vue';
+import ContactPage from './components/ContactPage.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -13,6 +14,9 @@ const router = createRouter({
   }, {
     path: '/event',
     component: EventPage,
+  }, {
+    path: '/contact',
+    component: ContactPage,
   }],
 });
 
